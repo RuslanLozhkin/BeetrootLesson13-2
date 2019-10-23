@@ -79,6 +79,9 @@ section > fieldset {
       align-self: center;
       padding-left: 50px;
       padding-right: 50px; } }
+  @media screen and (max-width: 1000px) {
+    section > fieldset legend {
+      width: 60%; } }
 
 .top--wrapper {
   background: url(bg/hero-bg.png);
@@ -86,45 +89,38 @@ section > fieldset {
   background-repeat: no-repeat;
   min-height: 1072px;
   color: #fff; }
-  .top--wrapper .top__title {
-    margin-top: 94px;
-    margin-bottom: 54px;
-    text-transform: uppercase;
-    font-size: 54px;
-    font-weight: bold;
-    color: #fff;
-    letter-spacing: 8.64px; }
-  .top--wrapper .top__p {
-    text-transform: uppercase;
-    color: #fff;
-    font-size: 15px;
-    letter-spacing: 0.9px;
-    margin-bottom: 245px; }
-  .top--wrapper .top__scroll {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
+  .top--wrapper .top {
+    text-transform: uppercase; }
+    .top--wrapper .top__title {
+      margin-top: 94px;
+      margin-bottom: 54px;
+      font-size: 54px;
+      font-weight: bold;
+      letter-spacing: 8.64px; }
+    .top--wrapper .top__p {
+      font-size: 15px;
+      letter-spacing: 0.9px;
+      margin-bottom: 245px; }
+    .top--wrapper .top__scroll {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
 
 .about--wrapper fieldset {
   border: 2px solid #3c3c3c;
   margin: 160px 0;
   padding-top: 75px;
-  padding-bottom: 30px; }
+  padding-bottom: 30px;
+  text-transform: uppercase; }
   .about--wrapper fieldset legend {
     width: 420px;
-    text-transform: uppercase;
     font-size: 34px;
     font-weight: bold;
-    color: #3c3c3c;
     letter-spacing: 5.44px; }
-    @media screen and (max-width: 1000px) {
-      .about--wrapper fieldset legend {
-        width: 60%; } }
   .about--wrapper fieldset .about__p {
-    color: #3c3c3c;
     font-size: 16px;
     line-height: 24px; }
 
@@ -136,19 +132,15 @@ section > fieldset {
     border: 2px solid #fff;
     margin: 160px 0;
     padding-top: 75px;
-    padding-bottom: 30px; }
+    padding-bottom: 30px;
+    color: #fff; }
     .services--wrapper fieldset legend {
       width: 420px;
       text-transform: uppercase;
       font-size: 34px;
       font-weight: bold;
-      color: #fff;
       letter-spacing: 5.44px; }
-      @media screen and (max-width: 1000px) {
-        .services--wrapper fieldset legend {
-          width: 60%; } }
     .services--wrapper fieldset .services__p {
-      color: #fff;
       font-size: 16px;
       font-weight: 300;
       line-height: 26px; }
@@ -156,84 +148,53 @@ section > fieldset {
 .whatwedo--wrapper fieldset {
   border: 2px solid #3c3c3c;
   margin-top: 120px;
-  margin-bottom: 120px;
-  padding-top: 120px;
-  padding-bottom: 120px; }
+  margin-bottom: 120px; }
   .whatwedo--wrapper fieldset legend {
     width: 420px;
     text-transform: uppercase;
     font-size: 34px;
     font-weight: bold;
     letter-spacing: 5.44px; }
-    @media screen and (max-width: 1000px) {
-      .whatwedo--wrapper fieldset legend {
-        width: 60%; } }
   .whatwedo--wrapper fieldset .whatwedo_block {
-    margin-bottom: 110px; }
+    margin-bottom: 110px;
+    color: #3c3c3c; }
     .whatwedo--wrapper fieldset .whatwedo_block__title {
       font-size: 20px;
       font-weight: bold;
-      color: #3c3c3c;
-      margin-top: 40px;
-      margin-bottom: 40px;
+      margin: 40px 0;
       text-transform: uppercase;
       letter-spacing: 5.44px; }
     .whatwedo--wrapper fieldset .whatwedo_block__p {
       font-size: 14px;
       font-weight: 300;
-      line-height: 26px;
-      color: #3c3c3c; }
+      line-height: 26px; }
 
 .menu--wrapper .menu {
-  width: 100%;
   padding-left: 0;
   padding-right: 0; }
   @media screen and (max-width: 1000px) {
-    .menu--wrapper .menu {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      width: 100%; }
-      .menu--wrapper .menu .menu_ul {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-flow: column wrap;
-        flex-flow: column wrap; }
-        .menu--wrapper .menu .menu_ul .menu_ul__line {
-          height: auto;
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-orient: vertical;
-          -webkit-box-direction: normal;
-          -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-          margin: 0; }
-          .menu--wrapper .menu .menu_ul .menu_ul__line .menu_ul__li {
-            background-size: cover;
-            background-repeat: no-repeat;
-            width: 100%;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            justify-content: center;
-            margin: 0; }
-            .menu--wrapper .menu .menu_ul .menu_ul__line .menu_ul__li :hover {
-              background: rgba(0, 0, 0, 0.3);
-              background-size: cover; }
-          .menu--wrapper .menu .menu_ul .menu_ul__line .menu_ul__li a {
-            text-align: center;
-            width: 100%;
-            height: 100%;
-            padding-left: 48px;
-            padding-right: 48px;
-            -webkit-box-sizing: border-box;
-            box-sizing: border-box; } }
+    .menu--wrapper .menu .menu_ul .menu_ul__line {
+      height: auto;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+      flex-flow: column wrap;
+      margin: 0; }
+      .menu--wrapper .menu .menu_ul .menu_ul__line .menu_ul__li {
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        margin: 0; }
+        .menu--wrapper .menu .menu_ul .menu_ul__line .menu_ul__li :hover {
+          background: rgba(0, 0, 0, 0.3);
+          background-size: cover; }
+      .menu--wrapper .menu .menu_ul .menu_ul__line .menu_ul__li a {
+        text-align: center;
+        width: 100%;
+        height: 100%; } }
   .menu--wrapper .menu nav {
     width: 100%; }
     .menu--wrapper .menu nav .menu_ul {
@@ -264,7 +225,8 @@ section > fieldset {
         background-size: cover; }
       .menu--wrapper .menu nav .menu_ul__li {
         width: 28.5%;
-        height: 237px; }
+        height: 237px;
+        background-repeat: no-repeat; }
         .menu--wrapper .menu nav .menu_ul__li a {
           display: -webkit-box;
           display: -ms-flexbox;
@@ -280,30 +242,23 @@ section > fieldset {
           text-decoration: none;
           text-transform: uppercase;
           color: #fff;
-          padding-left: 48px;
-          padding-bottom: 48px;
+          padding: 0 0 48px 48px;
           -webkit-box-sizing: border-box;
           box-sizing: border-box;
           font-size: 34px;
           font-weight: bold;
           letter-spacing: 5.44px; }
       .menu--wrapper .menu nav .menu_ul__li--1 {
-        background: url(bg/topworkz/bg.png);
-        background-repeat: no-repeat; }
+        background: url(bg/topworkz/bg.png); }
       .menu--wrapper .menu nav .menu_ul__li--2 {
         width: 42%;
-        background: url(bg/joint/bg.png);
-        background-repeat: no-repeat; }
+        background: url(bg/joint/bg.png); }
       .menu--wrapper .menu nav .menu_ul__li--3 {
-        background: url(bg/market/bg.png);
-        background-repeat: no-repeat; }
+        background: url(bg/market/bg.png); }
       .menu--wrapper .menu nav .menu_ul__li--4 {
-        background: url(bg/worktop/bg.png);
-        background-repeat: no-repeat; }
+        background: url(bg/worktop/bg.png); }
       .menu--wrapper .menu nav .menu_ul__li--5 {
         width: 42%;
-        background: url(bg/lable/bg.png);
-        background-repeat: no-repeat; }
+        background: url(bg/lable/bg.png); }
       .menu--wrapper .menu nav .menu_ul__li--6 {
-        background: url(bg/kyiv/bg.png);
-        background-repeat: no-repeat; }
+        background: url(bg/kyiv/bg.png); }
