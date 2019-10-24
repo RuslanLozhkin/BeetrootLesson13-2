@@ -169,96 +169,99 @@ section > fieldset {
       font-weight: 300;
       line-height: 26px; }
 
-.menu--wrapper .menu {
-  padding-left: 0;
-  padding-right: 0; }
-  @media screen and (max-width: 1000px) {
-    .menu--wrapper .menu .menu_ul .menu_ul__line {
-      height: auto;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-      flex-flow: column wrap;
-      margin: 0; }
-      .menu--wrapper .menu .menu_ul .menu_ul__line .menu_ul__li {
-        background-size: cover;
-        background-repeat: no-repeat;
-        width: 100%;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
+.menu--wrapper {
+  width: 100%; }
+  .menu--wrapper .menu {
+    width: inherit;
+    padding-left: 0;
+    padding-right: 0; }
+    @media screen and (max-width: 1000px) {
+      .menu--wrapper .menu .menu_ul .menu_ul__line {
+        height: auto;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+        flex-flow: column wrap;
         margin: 0; }
-        .menu--wrapper .menu .menu_ul .menu_ul__line .menu_ul__li :hover {
-          background: rgba(0, 0, 0, 0.3);
-          background-size: cover; }
-      .menu--wrapper .menu .menu_ul .menu_ul__line .menu_ul__li a {
-        text-align: center;
+        .menu--wrapper .menu .menu_ul .menu_ul__line .menu_ul__li {
+          background-size: cover;
+          background-repeat: no-repeat;
+          width: 100%;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          margin: 0; }
+          .menu--wrapper .menu .menu_ul .menu_ul__line .menu_ul__li :hover {
+            background: rgba(0, 0, 0, 0.3);
+            background-size: cover; }
+        .menu--wrapper .menu .menu_ul .menu_ul__line .menu_ul__li a {
+          text-align: center;
+          width: 100%;
+          height: 100%; } }
+    .menu--wrapper .menu nav {
+      width: 100%; }
+      .menu--wrapper .menu nav .menu_ul {
         width: 100%;
-        height: 100%; } }
-  .menu--wrapper .menu nav {
-    width: 100%; }
-    .menu--wrapper .menu nav .menu_ul {
-      width: 100%;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      list-style: none;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-      flex-flow: row wrap;
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      justify-content: space-between; }
-      .menu--wrapper .menu nav .menu_ul__line {
-        width: 100%;
-        height: 237px;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
+        list-style: none;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
         -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-        justify-content: space-between;
-        margin-bottom: 10px; }
-      .menu--wrapper .menu nav .menu_ul__li :hover {
-        background-color: rgba(0, 0, 0, 0.3);
-        background-size: cover; }
-      .menu--wrapper .menu nav .menu_ul__li {
-        width: 28.5%;
-        height: 237px;
-        background-repeat: no-repeat; }
-        .menu--wrapper .menu nav .menu_ul__li a {
+        justify-content: space-between; }
+        .menu--wrapper .menu nav .menu_ul__line {
+          width: 100%;
+          height: 237px;
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
-          -webkit-box-pack: start;
-          -ms-flex-pack: start;
-          justify-content: flex-start;
-          -webkit-box-align: end;
-          -ms-flex-align: end;
-          align-items: flex-end;
-          width: 100%;
-          height: 100%;
-          text-decoration: none;
-          text-transform: uppercase;
-          color: #fff;
-          padding: 0 0 48px 48px;
-          -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-          font-size: 34px;
-          font-weight: bold;
-          letter-spacing: 5.44px; }
-      .menu--wrapper .menu nav .menu_ul__li--1 {
-        background: url(bg/topworkz/bg.png); }
-      .menu--wrapper .menu nav .menu_ul__li--2 {
-        width: 42%;
-        background: url(bg/joint/bg.png); }
-      .menu--wrapper .menu nav .menu_ul__li--3 {
-        background: url(bg/market/bg.png); }
-      .menu--wrapper .menu nav .menu_ul__li--4 {
-        background: url(bg/worktop/bg.png); }
-      .menu--wrapper .menu nav .menu_ul__li--5 {
-        width: 42%;
-        background: url(bg/lable/bg.png); }
-      .menu--wrapper .menu nav .menu_ul__li--6 {
-        background: url(bg/kyiv/bg.png); }
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          justify-content: space-between;
+          margin-bottom: 10px; }
+        .menu--wrapper .menu nav .menu_ul__li :hover {
+          background-color: rgba(0, 0, 0, 0.3);
+          background-size: cover; }
+        .menu--wrapper .menu nav .menu_ul__li {
+          width: 28.5%;
+          height: 237px;
+          background-repeat: no-repeat; }
+          .menu--wrapper .menu nav .menu_ul__li a {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: start;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+            -webkit-box-align: end;
+            -ms-flex-align: end;
+            align-items: flex-end;
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #fff;
+            padding: 0 0 48px 48px;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            font-size: 34px;
+            font-weight: bold;
+            letter-spacing: 5.44px; }
+        .menu--wrapper .menu nav .menu_ul__li--1 {
+          background: url(bg/topworkz/bg.png); }
+        .menu--wrapper .menu nav .menu_ul__li--2 {
+          width: 42%;
+          background: url(bg/joint/bg.png); }
+        .menu--wrapper .menu nav .menu_ul__li--3 {
+          background: url(bg/market/bg.png); }
+        .menu--wrapper .menu nav .menu_ul__li--4 {
+          background: url(bg/worktop/bg.png); }
+        .menu--wrapper .menu nav .menu_ul__li--5 {
+          width: 42%;
+          background: url(bg/lable/bg.png); }
+        .menu--wrapper .menu nav .menu_ul__li--6 {
+          background: url(bg/kyiv/bg.png); }
